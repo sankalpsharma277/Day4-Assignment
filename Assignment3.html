@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Practice</title>
+    <style>
+     
+        .container #myHeader {
+            color: red;
+        }
+
+        div + h3 {
+            color: green;
+        }
+
+        .myText1 + .myText2 {
+            color: orange;
+        }
+
+      
+        .myInput[type="text"],
+        input[type="email"] {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="myHeader">Welcome to CSS Practice</h1>
+    </div>
+
+    <div>Some content here</div>
+    <h3>This h3 comes immediately after a div</h3>
+
+    <p class="myText1">First paragraph</p>
+    <p class="myText2">Second paragraph, styled with sibling selector</p>
+
+    <form>
+        <input class="myInput" type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+    </form>
+
+</body>
+</html>
